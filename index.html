@@ -121,16 +121,32 @@
 						<h2>Get in touch with me</h2>
 						<p>If you're liking what you see and feel I can be of help, don't wait another second—just shoot me an email down below. I'm eager to chat and see how we can team up to make things happen!</p>
 					</header>
-					<div class="box">
+					<form action="contact.php" method="POST">
+					<div>
+ 					 <input type="email" placeholder="email@example.com" name="email" required />
+					</div>
+					<div>
+  					<input type="text" placeholder="Subject" name="subject" required />
+					</div>
+					<div>
+					  <textarea placeholder="Your message" name="body" required></textarea>
+					</div>
+					<div>
+					  <button type="submit">Send a message</button>
+					</div>
+					</form>
+					
+					<!--<div class="box">
 						<form method="post" action="mailto:rprihom@gmail.com">
-							<div class="fields">
+							<div class="fields">-->
 								<!-- <div class="field half"><input type="text" name="name" placeholder="Name" /></div>
 								<div class="field half"><input type="email" name="email" placeholder="Email" /></div> -->
 								<!-- <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div> -->
 									<!-- <div class="field"><textarea name="" placeholder="Message" rows="6"></textarea></div> -->
-							</div>
+							<!--</div>
 							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="Send Message" /></li>-->
+					
 							</ul>
 						</form>
 					</div>
